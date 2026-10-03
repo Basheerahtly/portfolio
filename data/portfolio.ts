@@ -6,8 +6,7 @@
 export const profile = {
   name: "Hajrah Basheerah Tourabally",
   headline: "Computer Science (AI) student at Asia Pacific University, Malaysia",
-  bio: "Aspiring AI engineer who loves a good challenge. CS (Hons) in AI @ APU. Exploring generative AI & LLMs. Seeking an internship.",
-  email: "touraballybasheerahh@gmail.com",
+    bio: "Computer Science (AI) student exploring generative AI and LLMs. I enjoy a good challenge and I'm looking for an internship where I can build real things.",
   github: "https://github.com/Basheerahtly",
   role: "Aspiring AI Engineer",
   status: "Open to internships",

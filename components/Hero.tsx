@@ -3,7 +3,7 @@ import { profile } from "@/data/portfolio";
 
 export default function Hero() {
   return (
-    <section id="about" className="flex min-h-screen flex-wrap items-center gap-14 px-8 py-16 md:px-16">
+    <section id="about" className="mx-auto flex min-h-screen w-full max-w-6xl flex-wrap items-center gap-14 px-8 py-16 md:px-16">
       {/* LEFT SIDE: the text */}
       <div className="flex min-w-0 grow basis-96 flex-col items-start gap-5">
         {/* Status badge. "&&" means: only show this if status is not empty. */}

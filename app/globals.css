@@ -44,3 +44,9 @@ body {
   /* Use the Geist font, with Arial as a backup if it fails to load. */
   font-family: var(--font-geist-sans, Arial), Helvetica, sans-serif;
 }
+
+/* When a menu link jumps to a section, stop a little above it,
+   so the phone top bar doesn't cover the heading. */
+section {
+  scroll-margin-top: 4rem;
+}
