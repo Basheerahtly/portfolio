@@ -1,24 +1,39 @@
 @import "tailwindcss";
 
-/* Colours for LIGHT mode. These are "CSS variables": named values we can reuse. */
+/* Colours for LIGHT mode. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --accent: #2563eb;
+  --background: #f6f7f9;  /* page background */
+  --surface: #ffffff;     /* cards and the sidebar */
+  --foreground: #12151c;  /* main text */
+  --muted: #4b5563;       /* secondary text */
+  --border: #e3e6ec;      /* thin lines */
+  --accent: #2563eb;      /* your blue */
+  --on-accent: #ffffff;   /* text that sits on top of the blue */
+  --placeholder: #e4e8f0; /* box shown until you add a photo */
 }
 
 /* Colours for DARK mode. They apply when the <html> tag has the class "dark". */
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #0b0d12;
+  --surface: #12151c;
+  --foreground: #eceef2;
+  --muted: #a3acb9;
+  --border: #232733;
   --accent: #60a5fa;
+  --on-accent: #0b0d12;
+  --placeholder: #1a1f2a;
 }
 
-/* Register the colours with Tailwind, so we can write classes like "text-accent". */
+/* Register the colours with Tailwind, so "text-muted", "bg-surface" etc. work. */
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
   --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-placeholder: var(--placeholder);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -26,5 +41,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Use the Geist font, with Arial as a backup if it fails to load. */
+  font-family: var(--font-geist-sans, Arial), Helvetica, sans-serif;
 }

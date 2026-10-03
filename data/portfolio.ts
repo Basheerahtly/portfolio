@@ -9,6 +9,15 @@ export const profile = {
   bio: "Aspiring AI engineer who loves a good challenge. CS (Hons) in AI @ APU. Exploring generative AI & LLMs. Seeking an internship.",
   email: "touraballybasheerahh@gmail.com",
   github: "https://github.com/Basheerahtly",
+  role: "Aspiring AI Engineer",
+  status: "Open to internships",
+  course: "CS (Hons) in AI",
+  university: "Asia Pacific University",
+  skills: ["Python", "C#", "SQL"],
+  linkedin: "https://www.linkedin.com/in/hajrah-basheerah-tourabally-7249b2191/",
+  photo: "hajrah.jpg",
+  cv: "Hajrah_Tourabally_CV.pdf",
+
 };
 
 
