@@ -6,16 +6,20 @@
 export const profile = {
   name: "Hajrah Basheerah Tourabally",
   headline: "Computer Science (AI) student at Asia Pacific University, Malaysia",
-    bio: "Computer Science (AI) student exploring generative AI and LLMs. I enjoy a good challenge and I'm looking for an internship where I can build real things.",
+  bio: "Computer Science (AI) student exploring generative AI and LLMs. I enjoy a good challenge and I'm looking for an internship where I can build real things.",
   github: "https://github.com/Basheerahtly",
   role: "Aspiring AI Engineer",
-  status: "Open to internships",
+  status: "Open to internships and projects",
   course: "CS (Hons) in AI",
   university: "Asia Pacific University",
   skills: ["Python", "C#", "SQL"],
   linkedin: "https://www.linkedin.com/in/hajrah-basheerah-tourabally-7249b2191/",
   photo: "hajrah.jpg",
   cv: "Hajrah_Tourabally_CV.pdf",
+    // Access key from web3forms.com. It delivers contact form messages to your email.
+  contactKey: "b406849d-1014-4a3d-be94-b23ee53b1e32",
+  // Short invitation shown above the contact form.
+  contactIntro: "Have an internship opportunity or a project in mind? Send me a message and I will reply by email.",
 
 };
 
