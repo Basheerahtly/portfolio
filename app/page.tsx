@@ -1,11 +1,29 @@
 import ContactForm from "@/components/ContactForm";
+import Education from "@/components/Education";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
 import { profile, sections } from "@/data/portfolio";
 
+// Decides what goes inside each section, based on the section's id.
+// Each time we build a new section, we add a few lines here.
+function SectionContent({ id }: { id: string }) {
+  if (id === "education") {
+    return <Education />;
+  }
+  if (id === "contact") {
+    return (
+      <>
+        <p className="mb-8 mt-4 max-w-xl text-muted">{profile.contactIntro}</p>
+        <ContactForm />
+      </>
+    );
+  }
+  // Any section we haven't built yet shows this placeholder.
+  return <p className="mt-4 text-muted">Content coming soon.</p>;
+}
+
 export default function Home() {
   // Every section except "about", because the Hero component covers it.
-  // .filter() keeps only the items that pass the test, like Where() in C#.
   const otherSections = sections.filter((section) => section.id !== "about");
 
   return (
@@ -19,16 +37,7 @@ export default function Home() {
             {/* This inner box keeps the content from stretching on big screens */}
             <div className="mx-auto w-full max-w-6xl px-8 py-16 md:px-16">
               <h2 className="text-3xl font-bold">{section.label}</h2>
-
-              {/* The Contact section shows the form. The others show a placeholder for now. */}
-              {section.id === "contact" ? (
-                <>
-                  <p className="mb-8 mt-4 max-w-xl text-muted">{profile.contactIntro}</p>
-                  <ContactForm />
-                </>
-              ) : (
-                <p className="mt-4 text-muted">Content coming soon.</p>
-              )}
+              <SectionContent id={section.id} />
             </div>
           </section>
         ))}
