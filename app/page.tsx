@@ -2,11 +2,15 @@ import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
+import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";
 
 // Decides what goes inside each section, based on the section's id.
 // Each time we build a new section, we add a few lines here.
 function SectionContent({ id }: { id: string }) {
+  if (id === "skills") {
+    return <Skills />;
+  }
   if (id === "education") {
     return <Education />;
   }
@@ -33,7 +37,7 @@ export default function Home() {
       <main className="md:ml-64">
         <Hero />
         {otherSections.map((section) => (
-          <section key={section.id} id={section.id} className="min-h-screen border-t border-border">
+          <section key={section.id} id={section.id} className="border-t border-border">
             {/* This inner box keeps the content from stretching on big screens */}
             <div className="mx-auto w-full max-w-6xl px-8 py-16 md:px-16">
               <h2 className="text-3xl font-bold">{section.label}</h2>

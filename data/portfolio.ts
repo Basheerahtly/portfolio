@@ -52,3 +52,27 @@ export const education = [
     details: "Ranked 10th at National Level in O-Level Exams (2022), 16th at National Level in A-level Exams(Economics Side) & 139th in Top 500 Scholarship (2024) in Mauritius",
   },
 ];
+
+
+export const skillGroups = [
+  {
+    title: "Programming languages",
+    items: ["Python", "C#", "Java", "SQL"],
+  },
+  {
+    title: "Artificial intelligence",
+    items: ["AI Agents", "Prompt Engineering", "Generative AI and LLMs"],
+  },
+  {
+    title: "Systems and tools",
+    items: ["Linux (Ubuntu)", "System Administration", "Cisco Networking", "Git and GitHub"],
+  },
+  {
+    title: "Web development (currently learning)",
+    items: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Professional skills",
+    items: ["Public Speaking", "Leadership", "Teamwork", "Project Management", "Problem Solving"],
+  },
+];
