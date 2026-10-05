@@ -38,20 +38,30 @@ export const sections = [
 ];
 
 
+
 export const education = [
   {
-    school: "Asia Pacific University of Technology & Innovation (APU), Malaysia",
-    course: "BSc (Hons) Computer Science (Artificial Intelligence)",
-    years: "2025 - 2028",
-    details: "Currently in Year 2 Semester 1",
+    school: "Asia Pacific University of Technology and Innovation (APU)",
+    course: "Bachelor of Computer Science (Artificial Intelligence) (Hons)",
+    years: "Sep 2025 - Sep 2028 (expected)",
+    highlights: [
+      "First Class in Year 1, with a CGPA of 3.86",
+      "Member of the Rotaract Club of APU",
+    ],
   },
   {
     school: "Droopnath Ramphul State College, Mauritius",
-    course: "O-Level & A-Level (Economics Stream)",
-    years: "2017 - 2024",
-    details: "Ranked 10th at National Level in O-Level Exams (2022), 16th at National Level in A-level Exams(Economics Side) & 139th in Top 500 Scholarship (2024) in Mauritius",
+    course: "Cambridge A-Level (HSC) and O-Level (SC)",
+    years: "Jan 2017 - Nov 2024",
+    highlights: [
+      "A-Level (2024): A* in Mathematics, Computer Science and Economics",
+      "O-Level (2022): five A* and three A grades, ranked 10th nationally in Economics",
+      "Class Captain from 2019 to 2022",
+    ],
   },
 ];
+
+
 
 
 export const skillGroups = [
