@@ -30,7 +30,7 @@ export const sections = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
-  { id: "experience", label: "Experience" },
+  { id: "experience", label: "Leadership & Activities" },
   { id: "education", label: "Education" },
   { id: "certificates", label: "Certificates & Licenses" },
   { id: "achievements", label: "Achievements" },
@@ -45,19 +45,15 @@ export const education = [
     course: "Bachelor of Computer Science (Artificial Intelligence) (Hons)",
     years: "Sep 2025 - Sep 2028 (expected)",
     highlights: [
-      "First Class in Year 1, with a CGPA of 3.86",
-      "Member of the Rotaract Club of APU",
-    ],
+      "First Class in Year 1, with a CGPA of 3.86"],
   },
   {
     school: "Droopnath Ramphul State College, Mauritius",
     course: "Cambridge A-Level (HSC) and O-Level (SC)",
     years: "Jan 2017 - Nov 2024",
     highlights: [
-      "A-Level (2024): A* in Mathematics, Computer Science and Economics",
-      "O-Level (2022): five A* and three A grades, ranked 10th nationally in Economics",
-      "Class Captain from 2019 to 2022",
-    ],
+      "A-Level (2024): A* in Mathematics, Computer Science and Economic(Principal Subjects), a in French and General Paper(Subsidiary Subjects), ranked 16th Economics side nationally and 138th in Top 500 nationally",
+      "O-Level (2022): five A* and three A grades, ranked 10th nationally in Economics"],
   },
 ];
 
@@ -84,5 +80,48 @@ export const skillGroups = [
   {
     title: "Professional skills",
     items: ["Public Speaking", "Leadership", "Teamwork", "Project Management", "Problem Solving"],
+  },
+];
+
+
+// Your leadership roles and activities, newest first.
+// To add one later, copy a block (from "{" to "},") and change the details.
+// To hide the description for an item, leave it as "".
+export const activities = [
+  {
+    role: "Member",
+    organisation: "Rotaract Club of APU",
+    period: "ADD DATES",
+    description: "ADD ONE SENTENCE about what you do in the club.",
+  },
+  {
+    role: "Crew Member",
+    organisation: "Math Airport, APU",
+    period: "ADD DATE",
+    description: "ADD ONE SENTENCE about what you did at this event.",
+  },
+  {
+    role: "Executive Member",
+    organisation: "Benevolent Club, Droopnath Ramphul State College",
+    period: "2023",
+    description: "Took part in community outreach, including a visit to an ashram to spend time with elderly residents.",
+  },
+  {
+    role: "Executive Member",
+    organisation: "Art Club, Droopnath Ramphul State College",
+    period: "2022 - 2023",
+    description: "Helped organise school events, including a blood donation drive, prize-giving, Music Day and a Christmas party.",
+  },
+  {
+    role: "Class Captain",
+    organisation: "Droopnath Ramphul State College",
+    period: "2019 - 2022",
+    description: "Served as class captain for four consecutive years.",
+  },
+  {
+    role: "Vice-Treasurer",
+    organisation: "Health & Wellness Club, Droopnath Ramphul State College",
+    period: "2020",
+    description: "",
   },
 ];
