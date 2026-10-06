@@ -32,7 +32,7 @@ export const sections = [
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Leadership & Activities" },
   { id: "education", label: "Education" },
-  { id: "certificates", label: "Certificates & Licenses" },
+  { id: "certificates", label: "Certificates" },
   { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];
@@ -191,6 +191,55 @@ export const projects = [
     tools: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Basheerahtly/portfolio",
     live: "",
+    image: "",
+  },
+];
+
+// Your certificates and certifications. Put certifications first, then newest first.
+// "type" is "Certification" (earned by passing an official exam)
+// or "Certificate" (given for completing a course, workshop or event).
+// "link" is a web address where the credential can be checked.
+// "image" is the file name of a picture inside the folder public/certificates.
+// Leave link or image as "" to hide that part.
+export const certificates = [
+  {
+    title: "Mathematical Olympiad, Certificate of Participation",
+    issuer: "Universiti Teknologi MARA",
+    date: "May 2026",
+    type: "Certificate",
+    link: "",
+    image: "",
+  },
+  {
+    title: "Build Your First AI Agent: Hands-On Workshop",
+    issuer: "Asia Pacific University of Technology and Innovation (APU)",
+    date: "Apr 2026",
+    type: "Certificate",
+    link: "",
+    image: "",
+  },
+  {
+    title: "AI Amplified Scholar",
+    issuer: "Asia Pacific University of Technology and Innovation (APU)",
+    date: "Apr 2026",
+    type: "Certificate",
+    link: "",
+    image: "",
+  },
+  {
+    title: "Public Speaking Masterclasses, Certificate of Excellence",
+    issuer: "Shaun Payen Public Speaking Masterclasses",
+    date: "Jun 2025",
+    type: "Certificate",
+    link: "",
+    image: "",
+  },
+  {
+    title: "Universal ICT Education Programme",
+    issuer: "Ministry of Education and Human Resources, Mauritius",
+    date: "Oct 2019",
+    type: "Certificate",
+    link: "",
     image: "",
   },
 ];

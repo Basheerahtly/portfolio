@@ -1,5 +1,6 @@
 import Achievements from "@/components/Achievements";
 import Activities from "@/components/Activities";
+import Certificates from "@/components/Certificates";
 import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
@@ -9,7 +10,6 @@ import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";
 
 // Decides what goes inside each section, based on the section's id.
-// Each time we build a new section, we add a few lines here.
 function SectionContent({ id }: { id: string }) {
   if (id === "skills") {
     return <Skills />;
@@ -23,6 +23,9 @@ function SectionContent({ id }: { id: string }) {
   if (id === "education") {
     return <Education />;
   }
+  if (id === "certificates") {
+    return <Certificates />;
+  }
   if (id === "achievements") {
     return <Achievements />;
   }
@@ -34,7 +37,7 @@ function SectionContent({ id }: { id: string }) {
       </>
     );
   }
-  // Any section we haven't built yet shows this placeholder.
+  // A safety net: any section without content shows this line.
   return <p className="mt-4 text-muted">Content coming soon.</p>;
 }
 
