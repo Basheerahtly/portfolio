@@ -125,3 +125,59 @@ export const activities = [
     description: "",
   },
 ];
+
+// Your achievements, newest first.
+// "image" is the file name of a picture inside the folder public/achievements.
+// Leave image, issuer or description as "" to hide that part.
+// To add an achievement later, copy a block (from "{" to "},") and change the details.
+export const achievements = [
+  {
+    title: "Duke of Edinburgh's International Award, Silver",
+    issuer: "The Duke of Edinburgh's International Award",
+    year: "2024",
+    description: "",
+    image: "",
+  },
+  {
+    title: "Ranked 16th on the Economics side at A-Level",
+    issuer: "Cambridge A-Level (Higher School Certificate)",
+    year: "2024",
+    description: "Also placed 139th in the Top 500 scholarship ranking.",
+    image: "a_levels.jpg",
+  },
+  {
+    title: "Ranked 1st In Computer Science At School Level (Grade 12)",
+    issuer: "Droopnath Ramphul State College",
+    year: "2023",
+    description: "Also placed 139th in the Top 500 scholarship ranking.",
+    image: "grade12_award.jpg",
+  },
+  {
+    title: "Ranked 10th nationally in Economics at O-Level",
+    issuer: "Cambridge O-Level (School Certificate)",
+    year: "2022",
+    description: "",
+    image: "o-levels.jpg",
+  },
+  {
+    title: "Winning team, Green Your School Contest",
+    issuer: "Droopnath Ramphul State College",
+    year: "2021",
+    description: "",
+    image: "",
+  },
+  {
+    title: "Finalist, InnovED 2020",
+    issuer: "National Productivity and Competitiveness Council (NPCC)",
+    year: "2020",
+    description: "",
+    image: "",
+  },
+  {
+    title: "Winning team, Junior Hackathon 2019",
+    issuer: "Polytechnics Mauritius",
+    year: "2019",
+    description: "",
+    image: "junior_hackaton.jpg",
+  },
+];

@@ -1,3 +1,4 @@
+import Achievements from "@/components/Achievements";
 import Activities from "@/components/Activities";
 import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
@@ -17,6 +18,9 @@ function SectionContent({ id }: { id: string }) {
   }
   if (id === "education") {
     return <Education />;
+  }
+  if (id === "achievements") {
+    return <Achievements />;
   }
   if (id === "contact") {
     return (
