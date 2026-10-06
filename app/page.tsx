@@ -3,6 +3,7 @@ import Activities from "@/components/Activities";
 import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Sidebar from "@/components/Sidebar";
 import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";
@@ -12,6 +13,9 @@ import { profile, sections } from "@/data/portfolio";
 function SectionContent({ id }: { id: string }) {
   if (id === "skills") {
     return <Skills />;
+  }
+  if (id === "projects") {
+    return <Projects />;
   }
   if (id === "experience") {
     return <Activities />;

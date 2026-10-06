@@ -181,3 +181,16 @@ export const achievements = [
     image: "junior_hackaton.jpg",
   },
 ];
+
+
+export const projects = [
+  {
+    title: "Portfolio Website",
+    description:
+      "My personal website, built from scratch to present my skills, education and achievements. It has light and dark themes, a slide-in menu on phones and a working contact form.",
+    tools: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/Basheerahtly/portfolio",
+    live: "",
+    image: "",
+  },
+];
