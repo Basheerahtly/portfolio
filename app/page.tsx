@@ -4,8 +4,9 @@ import Certificates from "@/components/Certificates";
 import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/navBar"; 
- import Projects from "@/components/Projects";
+import Navbar from "@/components/NavBar";
+import Projects from "@/components/Projects";
+import Reveal from "@/components/Reveal";
 import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";
 
@@ -54,8 +55,11 @@ export default function Home() {
           <section key={section.id} id={section.id} className="border-t border-border">
             {/* This inner box keeps the content from stretching on big screens */}
             <div className="mx-auto w-full max-w-6xl px-8 py-16 md:px-16">
-              <h2 className="text-3xl font-bold">{section.label}</h2>
-              <SectionContent id={section.id} />
+              {/* Everything inside Reveal fades in when scrolled into view */}
+              <Reveal>
+                <h2 className="text-3xl font-bold">{section.label}</h2>
+                <SectionContent id={section.id} />
+              </Reveal>
             </div>
           </section>
         ))}
