@@ -4,7 +4,7 @@ import Certificates from "@/components/Certificates";
 import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/NavBar"; 
+import Navbar from "@/components/navBar"; 
  import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";

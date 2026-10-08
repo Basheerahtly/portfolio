@@ -8,6 +8,7 @@ export const profile = {
   headline: "Computer Science (AI) student at Asia Pacific University, Malaysia",
   bio: "Computer Science (AI) student exploring generative AI and LLMs. I enjoy a good challenge and I'm looking for an internship where I can build real things.",
   github: "https://github.com/Basheerahtly",
+  email: "touraballybasheerahh@gmail.com",
   role: "Aspiring AI Engineer",
   status: "Open to internships and projects",
   course: "CS (Hons) in AI",
