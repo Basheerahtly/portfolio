@@ -65,3 +65,62 @@ section {
     box-shadow: 0 16px 32px -16px var(--accent);
   }
 }
+
+/* CARDS ONE BY ONE
+   The Reveal component marks each section with data-seen="false" until it
+   scrolls into view, then changes the marker to data-seen="true".
+   ".grid > *" means: every direct child of a grid, which is each card. */
+@media (prefers-reduced-motion: no-preference) {
+  /* Before the section has been seen, its cards are invisible. */
+  [data-seen="false"] .grid > * {
+    opacity: 0;
+  }
+
+  /* Once it has been seen, each card plays the "card-in" animation.
+     "backwards" keeps a card invisible while it waits for its turn. */
+  [data-seen="true"] .grid > * {
+    animation: card-in 0.5s ease-out backwards;
+  }
+
+  /* Each card waits a little longer than the one before it. */
+  [data-seen="true"] .grid > *:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  [data-seen="true"] .grid > *:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  [data-seen="true"] .grid > *:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  [data-seen="true"] .grid > *:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  [data-seen="true"] .grid > *:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  [data-seen="true"] .grid > *:nth-child(n + 7) {
+    animation-delay: 0.6s;
+  }
+
+  /* The Skills cards get the same hover lift as the other cards. */
+  main .grid > div {
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  main .grid > div:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 16px 32px -16px var(--accent);
+  }
+}
+
+/* The two ends of the card animation: from invisible and lower, to visible and in place. */
+@keyframes card-in {
+  from {
+    opacity: 0;
+    translate: 0 24px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
