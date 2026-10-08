@@ -25,18 +25,19 @@ export const profile = {
 
 
 // The sections of the site, in the order they appear.
-// "id" is used in the link (lowercase, no spaces). "label" is what visitors see.
+// "id" is used in the link (lowercase, no spaces).
+// "label" is the heading shown on the page.
+// "navLabel" is the shorter name shown in the top bar.
 export const sections = [
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "projects", label: "Projects" },
-  { id: "experience", label: "Leadership & Activities" },
-  { id: "education", label: "Education" },
-  { id: "certificates", label: "Certificates" },
-  { id: "achievements", label: "Achievements" },
-  { id: "contact", label: "Contact" },
+  { id: "about", label: "About", navLabel: "About" },
+  { id: "skills", label: "Skills", navLabel: "Skills" },
+  { id: "projects", label: "Projects", navLabel: "Projects" },
+  { id: "experience", label: "Leadership & Activities", navLabel: "Activities" },
+  { id: "education", label: "Education", navLabel: "Education" },
+  { id: "certificates", label: "Certificates", navLabel: "Certificates" },
+  { id: "achievements", label: "Achievements", navLabel: "Achievements" },
+  { id: "contact", label: "Contact", navLabel: "Contact" },
 ];
-
 
 
 export const education = [

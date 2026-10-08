@@ -4,8 +4,8 @@ import Certificates from "@/components/Certificates";
 import ContactForm from "@/components/ContactForm";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/NavBar"; 
+ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";
 
@@ -47,9 +47,8 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar />
-      {/* "md:ml-64" pushes the content right so the sidebar doesn't cover it */}
-      <main className="md:ml-64">
+      <Navbar />
+      <main>
         <Hero />
         {otherSections.map((section) => (
           <section key={section.id} id={section.id} className="border-t border-border">
