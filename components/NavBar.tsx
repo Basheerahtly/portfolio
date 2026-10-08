@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { profile, sections } from "@/data/portfolio";
+import ScrollProgress from "@/components/ScrollProgress";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
@@ -59,6 +60,9 @@ export default function Navbar() {
           ))}
         </nav>
       )}
+
+      {/* The thin blue line at the bottom of the bar that fills as you scroll */}
+      <ScrollProgress />
     </header>
   );
 }
