@@ -1,9 +1,8 @@
 import Achievements from "@/components/Achievements";
-import Activities from "@/components/Activities";
 import Certificates from "@/components/Certificates";
 import ContactForm from "@/components/ContactForm";
-import Education from "@/components/Education";
 import Hero from "@/components/Hero";
+import Journey from "@/components/Journey";
 import Navbar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Reveal from "@/components/Reveal";
@@ -20,10 +19,7 @@ function SectionContent({ id }: { id: string }) {
     return <Projects />;
   }
   if (id === "experience") {
-    return <Activities />;
-  }
-  if (id === "education") {
-    return <Education />;
+    return <Journey />;
   }
   if (id === "certificates") {
     return <Certificates />;

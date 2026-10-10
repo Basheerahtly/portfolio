@@ -15,7 +15,7 @@ export default function Explore() {
         {sections.map((section, index) => {
           // Skip the two sections that do not need a card.
           // Returning null means "draw nothing for this item".
-          if (section.id === "about" || section.id === "contact") {
+          if (section.id === "about") {
             return null;
           }
 

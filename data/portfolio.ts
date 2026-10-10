@@ -29,8 +29,7 @@ export const sections = [
   { id: "about", label: "About", navLabel: "About", blurb: "Who I am" },
   { id: "skills", label: "Skills", navLabel: "Skills", blurb: "What I work with" },
   { id: "projects", label: "Projects", navLabel: "Projects", blurb: "Things I have built" },
-  { id: "experience", label: "Leadership & Activities", navLabel: "Activities", blurb: "Roles I have held" },
-  { id: "education", label: "Education", navLabel: "Education", blurb: "Where I studied" },
+  { id: "experience", label: "My Journey", navLabel: "Journey", blurb: "Study, work and leadership" },
   { id: "certificates", label: "Certificates", navLabel: "Certificates", blurb: "Courses and workshops" },
   { id: "achievements", label: "Achievements", navLabel: "Achievements", blurb: "Awards and rankings" },
   { id: "contact", label: "Contact", navLabel: "Contact", blurb: "Get in touch" },
@@ -292,5 +291,98 @@ export const certificates = [
     type: "Certificate",
     link: "",
     image: "",
+  },
+];
+
+// A "type" describes the shape of a piece of data, like a class in C#.
+// Every stage of the journey must have exactly these fields.
+type Stage = {
+  tab: string;
+  period: string;
+  place: string;
+  heading: string;
+  highlights: string[];
+  roles: { role: string; period: string; description: string }[];
+};
+
+// Your journey, newest first. Each stage becomes one tab.
+// "highlights" are bullet points. "roles" are shown as a small timeline.
+// Use [] for highlights or roles to show none. Use "" to hide a description.
+export const journey: Stage[] = [
+  {
+    tab: "University",
+    period: "2025 - Present",
+    place: "Asia Pacific University of Technology and Innovation (APU)",
+    heading: "Bachelor of Computer Science (Artificial Intelligence) (Hons)",
+    highlights: [
+      "First Class in Year 1, with a CGPA of 3.86",
+      "Expected graduation: September 2028",
+    ],
+    roles: [
+      {
+        role: "Group Leader, team assignments",
+        period: "2025 - Present",
+        description: "Led project teams for most group assignments, coordinating tasks and deliverables.",
+      },
+      {
+        role: "Project Manager, Co-Curriculum 2 module",
+        period: "2026",
+        description: "Planned and managed the team's booth activity.",
+      },
+      {
+        role: "Crew Member, Math Airport",
+        period: "Jun 2026",
+        description: "Helped run and supervise a board game competition as part of the event crew.",
+      },
+      {
+        role: "Member, Rotaract Club of APU",
+        period: "2025 - Present",
+        description: "",
+      },
+    ],
+  },
+  {
+    tab: "Tutoring",
+    period: "Dec 2024 - Aug 2025",
+    place: "A-Level Mathematics Tutor",
+    heading: "Work experience",
+    highlights: [
+      "Delivered A-Level Mathematics tuition for nine months",
+      "Explained complex concepts clearly to support each student's progress",
+    ],
+    roles: [],
+  },
+  {
+    tab: "College",
+    period: "2017 - 2024",
+    place: "Droopnath Ramphul State College, Mauritius",
+    heading: "Cambridge A-Level (HSC) and O-Level (SC)",
+    highlights: [
+      "A-Level (2024): A* in Mathematics, Computer Science and Economics",
+      "Ranked 16th on the Economics side and 139th in the national Top 500",
+      "O-Level (2022): five A* and three A grades, ranked 10th nationally in Economics",
+    ],
+    roles: [
+      {
+        role: "Executive Member, Benevolent Club",
+        period: "2023",
+        description: "Took part in community outreach, including a visit to an ashram to spend time with elderly residents.",
+      },
+      {
+        role: "Executive Member, Art Club",
+        period: "2022 - 2023",
+        description: "Helped organise school events, including a blood donation drive, prize-giving, Music Day and a Christmas party.",
+      },
+      {
+        role: "Class Captain",
+        period: "2019 - 2022",
+        description: "Served as class captain for four consecutive years.",
+      },
+      {
+        role: "Vice-Treasurer, Health & Wellness Club",
+        period: "2020",
+        description: "",
+      },
+    ],
   },
 ];
