@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Reveal from "@/components/Reveal";
+import SectionHeading from "@/components/SectionHeading";
 import Skills from "@/components/Skills";
 import { profile, sections } from "@/data/portfolio";
 
@@ -51,13 +52,16 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        {otherSections.map((section) => (
+        {/* "index" is the position of each section in the list: 0, 1, 2 and so on */}
+        {otherSections.map((section, index) => (
           <section key={section.id} id={section.id} className="border-t border-border">
             {/* This inner box keeps the content from stretching on big screens */}
             <div className="mx-auto w-full max-w-6xl px-8 py-16 md:px-16">
               {/* Everything inside Reveal fades in when scrolled into view */}
               <Reveal>
-                <h2 className="text-3xl font-bold">{section.label}</h2>
+                {/* index + 2 because the introduction counts as section 01.
+                    padStart(2, "0") adds a zero in front, turning "2" into "02". */}
+                <SectionHeading number={String(index + 2).padStart(2, "0")} title={section.label} />
                 <SectionContent id={section.id} />
               </Reveal>
             </div>

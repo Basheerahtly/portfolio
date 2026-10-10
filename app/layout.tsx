@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 import ThemeScript from "@/components/ThemeScript";
 
 // Load the fonts and give each a name that our CSS can refer to.
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+// Oswald is a tall, narrow font. We use it only for big headings.
+const oswald = Oswald({ variable: "--font-oswald", subsets: ["latin"] });
 
 // "metadata" sets the browser tab title and the description search engines show.
 export const metadata: Metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <ThemeScript />
