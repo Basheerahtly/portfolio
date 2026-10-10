@@ -8,7 +8,22 @@ export default function Achievements() {
       {/* One card per achievement */}
       {achievements.map((item) => (
         <article key={item.title} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface">
-          {/* The picture, shown only if an image file name is set.
+          {/* THE TEXT. "grow" lets it fill the card, so photos line up at the bottom. */}
+          <div className="flex grow flex-col gap-2 p-6">
+            <p className="font-mono text-sm text-muted">{item.year}</p>
+
+            {/* The result, in large gold letters, with a short gold line under it */}
+            <p className="font-display text-5xl font-bold uppercase leading-none text-amber-600">
+              {item.highlight}
+            </p>
+            <span className="my-2 block h-0.5 w-12 bg-amber-600" />
+
+            <h3 className="text-lg font-semibold">{item.title}</h3>
+            {item.issuer && <p className="font-medium text-accent">{item.issuer}</p>}
+            {item.description && <p className="text-muted">{item.description}</p>}
+          </div>
+
+          {/* THE PHOTO, shown only if an image file name is set.
               It is a link, so clicking opens the full picture in a new tab. */}
           {item.image && (
             <a
@@ -26,14 +41,6 @@ export default function Achievements() {
               />
             </a>
           )}
-
-          {/* The text part of the card */}
-          <div className="flex flex-col gap-2 p-6">
-            <p className="font-mono text-sm text-muted">{item.year}</p>
-            <h3 className="text-lg font-semibold">{item.title}</h3>
-            {item.issuer && <p className="font-medium text-accent">{item.issuer}</p>}
-            {item.description && <p className="text-muted">{item.description}</p>}
-          </div>
         </article>
       ))}
     </div>
