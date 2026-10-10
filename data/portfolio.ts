@@ -180,15 +180,66 @@ export const achievements = [
 ];
 
 
+// Your projects, best or newest first.
+// "type" is shown on the poster, for example "Personal project".
+// "tools" is a list of the technologies used.
+// "github" is the link to the code. "live" is the link to the working site or app.
+// Leave github or live as "" to hide that link.
+// To add a project later, copy a block (from "{" to "},") and change the details.
 export const projects = [
   {
     title: "Portfolio Website",
+    type: "Personal project",
     description:
-      "My personal website, built from scratch to present my skills, education and achievements. It has light and dark themes, a slide-in menu on phones and a working contact form.",
+      "My personal website, built from scratch with light and dark themes, scroll animations and a working contact form.",
     tools: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Basheerahtly/portfolio",
     live: "",
-    image: "",
+  },
+  {
+    title: "Luminae: AI Career Guidance Chatbot",
+    type: "University project",
+    description:
+      "An AI chatbot that gives career guidance, using a knowledge base built on the RIASEC framework.",
+    tools: ["Botpress"],
+    github: "",
+    live: "",
+  },
+  {
+    title: "Restaurant Management System",
+    type: "University project",
+    description:
+      "A desktop restaurant management application built as a team. I developed the chef-role features.",
+    tools: ["C#"],
+    github: "",
+    live: "",
+  },
+  {
+    title: "Hotel Management System",
+    type: "University project",
+    description:
+      "A hotel management system built as a team. I developed the hotel manager features.",
+    tools: ["Python"],
+    github: "",
+    live: "",
+  },
+  {
+    title: "LAN and WAN Network Design",
+    type: "University project",
+    description:
+      "Designed a LAN and WAN network and completed the full device configurations.",
+    tools: ["Cisco Packet Tracer"],
+    github: "",
+    live: "",
+  },
+  {
+    title: "Shape-Generating Script",
+    type: "University project",
+    description:
+      "A shell script that generates shapes in a Linux (Ubuntu) environment.",
+    tools: ["Shell scripting", "Linux (Ubuntu)"],
+    github: "",
+    live: "",
   },
 ];
 
