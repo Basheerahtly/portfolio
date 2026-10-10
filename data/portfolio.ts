@@ -25,21 +25,16 @@ export const profile = {
 };
 
 
-// The sections of the site, in the order they appear.
-// "id" is used in the link (lowercase, no spaces).
-// "label" is the heading shown on the page.
-// "navLabel" is the shorter name shown in the top bar.
 export const sections = [
-  { id: "about", label: "About", navLabel: "About" },
-  { id: "skills", label: "Skills", navLabel: "Skills" },
-  { id: "projects", label: "Projects", navLabel: "Projects" },
-  { id: "experience", label: "Leadership & Activities", navLabel: "Activities" },
-  { id: "education", label: "Education", navLabel: "Education" },
-  { id: "certificates", label: "Certificates", navLabel: "Certificates" },
-  { id: "achievements", label: "Achievements", navLabel: "Achievements" },
-  { id: "contact", label: "Contact", navLabel: "Contact" },
+  { id: "about", label: "About", navLabel: "About", blurb: "Who I am" },
+  { id: "skills", label: "Skills", navLabel: "Skills", blurb: "What I work with" },
+  { id: "projects", label: "Projects", navLabel: "Projects", blurb: "Things I have built" },
+  { id: "experience", label: "Leadership & Activities", navLabel: "Activities", blurb: "Roles I have held" },
+  { id: "education", label: "Education", navLabel: "Education", blurb: "Where I studied" },
+  { id: "certificates", label: "Certificates", navLabel: "Certificates", blurb: "Courses and workshops" },
+  { id: "achievements", label: "Achievements", navLabel: "Achievements", blurb: "Awards and rankings" },
+  { id: "contact", label: "Contact", navLabel: "Contact", blurb: "Get in touch" },
 ];
-
 
 export const education = [
   {

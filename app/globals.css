@@ -35,6 +35,7 @@
   --color-on-accent: var(--on-accent);
   --color-placeholder: var(--placeholder);
   --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
   --font-display: var(--font-oswald);
 }
 

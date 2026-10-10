@@ -13,8 +13,8 @@ export default function Navbar() {
     // "sticky top-0" keeps the bar at the top of the screen while the page scrolls.
     <header className="sticky top-0 z-30 border-b border-border bg-surface">
       <div className="flex items-center justify-between gap-4 px-6 py-3 md:px-10">
-        {/* Your name. Clicking it goes back to the top of the page. */}
-        <a href="#about" className="whitespace-nowrap font-bold">
+        {/* Your name. "truncate" shortens it with three dots if the screen is too narrow. */}
+        <a href="#about" className="min-w-0 truncate font-display text-lg font-semibold uppercase tracking-wide">
           {profile.name}
         </a>
 
@@ -32,8 +32,12 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <ThemeToggle />
+        {/* "shrink-0" stops these buttons from being squeezed */}
+        <div className="flex shrink-0 items-center gap-2">
+          {/* On phones the theme button moves into the menu, to leave room for your name */}
+          <div className="hidden sm:block">
+            <ThemeToggle />
+          </div>
           {/* MENU BUTTON: only on screens narrower than 1100 pixels */}
           <button
             onClick={() => setOpen(!open)}
@@ -58,6 +62,10 @@ export default function Navbar() {
               {section.navLabel}
             </a>
           ))}
+          {/* The theme button, shown here only on phones */}
+          <div className="pt-2 sm:hidden">
+            <ThemeToggle />
+          </div>
         </nav>
       )}
 
